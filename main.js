@@ -85,12 +85,12 @@ function loop() {
     ctx.fillStyle = 'rgba(0,1,1,1)';
     ctx.fillRect(0,0,width,height);
 
-    while (balls.length < 50) {
-        var size = random(1,50);
+    while (balls.length < 70) {
+        var size = random(25,25);
         var ball = new Ball(
             random(0 + size,width - size),
             random(0 + size,height - size),
-            random(-9,9),
+            random(9,-9),
             random(-9,9),
             'rgb(' + random(0,255) + ',' + random(0,255) + ',' + random(0,255) +')',
             size
